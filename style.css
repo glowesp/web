@@ -3,19 +3,20 @@
 
 body {
     background-color: #111;
+    margin: 0;
 }
 
 .main {
     color: white;
     font-family: 'Roboto Mono', monospace;
+    max-width: 1000px;
+    margin: auto;
 }
 .heading {
     font-size: 15px;
-    padding-left: 200px;
     padding-top: 30px;
 }
 .about {
-    padding-left: 240px;
     padding-top: 20px;
 }
 span  {
@@ -54,4 +55,54 @@ li a:hover:not(.active) {
   
 .active {
     background-color: #ffffff;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+.row 
+{
+    margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 20px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  font-family: 'Roboto Mono', monospace;
+  color: aliceblue;
+  border-radius: 25px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* hide scrollbar but allow scrolling */
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+element::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
