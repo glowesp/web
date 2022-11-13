@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+body {
+    background-color: #111;
+    margin: 0;
+}
+
+.main {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 1000px;
+    margin: auto;
+}
+.heading {
+    font-size: 15px;
+    padding-top: 30px;
+}
+.about {
+    padding-top: 20px;
+}
+span  {
+    color:rgb(0, 216, 0);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 5px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+li {
+    float: left;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    display:flex;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #ffffff;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+.row 
+{
+    margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 20px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  font-family: 'Roboto Mono', monospace;
+  color: aliceblue;
+  border-radius: 25px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* hide scrollbar but allow scrolling */
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+element::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
