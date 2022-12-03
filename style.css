@@ -1,108 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-
-
-body {
-    background-color: #111;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.main {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    max-width: 1000px;
-    margin: auto;
+body, html {
+  height: 100%;
+  background-color: #111111;
+  font-family: 'JetbrainsMono Nerd Font';
+  margin: 0; 
+  overflow: hidden;
 }
-.heading {
-    font-size: 15px;
-    padding-top: 30px;
+.grid {
+  display: grid;
 }
-.about {
-    padding-top: 20px;
+.block {
+  display: block;
 }
-span  {
-    color:rgb(0, 216, 0);
+.flex {
+  display: flex;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #222;
-    border-radius: 5px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-  }
-  
-li {
-    float: left;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    display:flex;
+.h-screen {
+  height: 100vh;
 }
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.mr-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
-  
-li a:hover:not(.active) {
-    background-color: #111;
+.place-items-center {
+  place-items: center;
 }
-  
-.active {
-    background-color: #ffffff;
+.background-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(20, 20, 20)), url(images/warlat.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-
-* 
-{
-    box-sizing: border-box;
+.blur {
+  filter: blur(5px);
 }
-.row 
-{
-    margin: 8px -16px;
+.overlay {
+  z-index: 9;
 }
-.row,
-.row > .column {
+.container {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  max-width: 25rem;
+  width: 100%;
   padding: 20px;
-}
-.column {
-  float: left;
-  width: 25%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.content {
-  background-color: rgb(0, 0, 0);
-  padding: 30px;
-  font-family: 'Roboto Mono', monospace;
+  background: #111111;
   color: aliceblue;
-  border-radius: 25px;
 }
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+.box-2 {
+  width: 100%;
+  padding: 20px;
+  background: #161616;
+  color: aliceblue;
 }
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.box-3 {
+  width: 100%;
+  padding: 10px;
+  color: aliceblue;
 }
-/* hide scrollbar but allow scrolling */
-element {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-    overflow-x: hidden;
+.border {
+  border-radius: 18px;
+  border: 1.65469px solid #b73bff;
+}
+.border-r {
+  border-radius: 8px;
+}
+.headerline {
+  border: 1.4px solid #df8eff;
+}
+::selection {
+  background: #8163FB;
+}
+.text-align{
+  text-align: center;
+}
+.profile-pic {
+  margin-top: .5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 100%;
+  max-width: 105px;
+  max-height: 105px;
+  min-width: 105px;
+  min-height: 105px;
+  align-self: center;
+  box-shadow: 5px 6px 5px rgb(0, 0, 0);
+}
+.mt-5 {
+  margin-top: .5rem;
+}
+.mt-2 {
+  margin-top: .2rem;
+}
+.mb-125 {
+  margin-bottom: 1.25rem;
+}
+.mb-ev {
+  margin-bottom: .50rem;
+}
+.t {
+  font-weight: 350;
+}
+.bttn {
+  width: 100%;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.bttn-github {
+  background-color: #3f3f3fef;
+  font-family: 'JetbrainsMono Nerd Font';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.9192px;
+  width: 100%;
+  height: 35px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
 }
 
-element::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
