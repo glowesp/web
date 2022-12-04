@@ -4,9 +4,13 @@
   padding: 0;
 }
 @font-face {
-  font-family: "JetbrainsMono Nerd Font";
-  src: url("/JetBrains\ Mono\ Bold\ Nerd\ Font\ Complete\ Mono.woff") format('woff');
-} 
+    font-family: 'JetBrainsMonoNL Nerd Font Mono';
+    src: url('JetBrainsMonoNLNerdFontCompleteM-Regular.woff2') format('woff2'),
+        url('JetBrainsMonoNLNerdFontCompleteM-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body, html {
   height: 100%;
   background-color: #111111;
