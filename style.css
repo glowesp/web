@@ -4,9 +4,7 @@
   padding: 0;
 }
 @font-face {
-    font-family: 'JetBrainsMonoNL Nerd Font Mono';
-    src: url('JetBrainsMonoNLNerdFontCompleteM-Regular.woff2') format('woff2'),
-        url('JetBrainsMonoNLNerdFontCompleteM-Regular.woff') format('woff');
+
     font-weight: normal;
     font-style: normal;
     font-display: swap;
