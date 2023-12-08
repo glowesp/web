@@ -13,7 +13,7 @@
 body, html {
   height: 100%;
   background-color: #111111;
-  font-family: 'JetbrainsMono Nerd Font';
+  font-family: 'JetbrainsMonoNL Nerd Font Mono';
   margin: 0; 
   overflow: hidden;
 }
@@ -121,7 +121,7 @@ body, html {
 }
 .bttn-github {
   background-color: #3f3f3fef;
-  font-family: 'JetbrainsMono Nerd Font';
+  font-family: 'JetbrainsMonoNL Nerd Font Mono';
   font-style: normal;
   font-weight: 300;
   font-size: 13.9192px;
