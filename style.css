@@ -37,7 +37,7 @@ body, html {
   place-items: center;
 }
 .background-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(20, 20, 20)), url(images/newyork.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(20, 20, 20)), url(images/bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
